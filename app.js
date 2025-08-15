@@ -1,6 +1,7 @@
 alert('Boas vindas ao jogo do número secreto');
 
-let numeroSecreto = parseInt(Math.random() * 10+1);;
+let = dificuldade = Number(prompt('Escolha um o número máximo: '));
+let numeroSecreto = parseInt(Math.random() * dificuldade+1);;
 let numeroEscolhido = null;
 let tentativas = 1;
 
@@ -8,7 +9,7 @@ let tentativas = 1;
 
 // enquanto numero secreto for diferente do numero escolhido
 while (numeroSecreto != numeroEscolhido) {
-    numeroEscolhido = Number(prompt('Escolha um número entre 1 e 10'));
+    numeroEscolhido = Number(prompt(`Escolha um número entre 1 e ${dificuldade}`));
     if (numeroSecreto == numeroEscolhido) {
         break;
     } else {  
